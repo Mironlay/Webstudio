@@ -12,3 +12,37 @@
 
 /* font-family: "Raleway", sans-serif; */
 /* font-family: "Roboto", sans-serif;  */
+
+.nav-link {
+    color: var(--accent-text);
+font-family: "Roboto" sans-serif;
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
+.active {
+    color: var(--third-additional-text);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--third-additional-text);
+}
+
+.header-link {
+    color: var(--sec-additional-text);
+    font-family: "Roboto" sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+}
+
+
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--third-additional-text);
+}
