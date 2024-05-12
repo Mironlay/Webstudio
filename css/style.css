@@ -142,7 +142,7 @@ letter-spacing: 1.08px;
     background-color: var(--second-background);
 }
 
-.team-list {
+.team-item {
     background-color: var(--first-background);
 }
 
@@ -413,7 +413,7 @@ background: var(--third-background);
 box-shadow: 0px 3px 1px 0px var(--button-box-shadow)
 }
 
-.portfolio-list {
+.portfolio-item {
     background-color: var(--portfolio-background);
 }
 
