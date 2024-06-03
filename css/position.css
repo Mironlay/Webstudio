@@ -1,0 +1,129 @@
+body {
+    font-family: "Roboto", sans-serif;
+} 
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* header */
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-box {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-box {
+    display: flex;
+    gap: 50px;
+}
+
+/* hero */
+
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-button {
+    margin-top: 30px;
+}
+
+/* skills */
+
+.skills {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.skills-desc {
+    margin-top: 10px;
+}
+
+.skills-list-box {
+    display: flex;
+    gap: 30px;
+}
+
+/* work */
+
+.work {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.work-box {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+/* team */
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-title {
+    text-align: center;
+}
+
+.team-box {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+
+}
+
+.team-image {
+    width: 270px;
+    height: 260px;
+}
+
+.team-item {
+    text-align: center;
+}
+
+.team-text-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-desc {
+    margin-top: 10px;
+}
+
+/* footer */
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-address {
+    margin-top: 20px;
+}
+
+.footer-address-link {
+margin-top: 9px;
+}

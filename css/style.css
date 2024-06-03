@@ -1,18 +1,3 @@
-:root {
-    --hero-background: rgba(47, 48, 58, 1);
-    --first-background: rgba(255, 255, 255, 1);
-    --second-background: rgba(245, 244, 250, 1);
-    --third-background: rgba(33, 150, 243, 1);
-    --portfolio-background: rgba(238, 238, 238, 1);
-    --button-box-shadow: rgba(0, 0, 0, 0.15);
-    --accent-text: rgba(33,33,33,1);
-    --additional-text: rgba(255, 255, 255, 1);
-    --sec-additional-text: rgba(117, 117, 117, 1);
-    --third-additional-text: rgba(33, 150, 243, 1);
-    --footer-text: rgba(255, 255, 255, 0.6);
-}
-
-
 /* font-family: "Raleway", sans-serif; */
 /* font-family: "Roboto", sans-serif;  */
 
@@ -36,7 +21,6 @@ letter-spacing: 0.78px;
 
 .nav-link {
     color: var(--accent-text);
-font-family: "Roboto" sans-serif;
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
@@ -54,7 +38,6 @@ letter-spacing: 0.28px;
 
 .header-link {
     color: var(--sec-additional-text);
-    font-family: "Roboto" sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -77,7 +60,6 @@ letter-spacing: 0.28px;
 .hero-title {
     color: var(--additional-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 44px;
 font-weight: 900;
 line-height: 1.36;
@@ -89,7 +71,6 @@ text-transform: uppercase;
 /* text */
 color: var(--additional-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 700;
 line-height: 1.87;
@@ -107,7 +88,6 @@ flex-shrink: 0;
 /* skills */
 .skills-title {
 color: var(--accent-text);
-font-family: "Roboto" sans-serif;
 font-size: 14px;
 font-weight: 700;
 line-height: 1.14;
@@ -117,7 +97,6 @@ text-transform: uppercase;
 
 .skills-desc {
 color: var(--sec-additional-text);
-font-family: "Roboto" sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
@@ -129,7 +108,6 @@ letter-spacing: 0.42px;
 .work-title {
 color: var(--accent-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 36px;
 font-weight: 700;
 line-height: 1.16;
@@ -149,7 +127,6 @@ letter-spacing: 1.08px;
 .team-title {
 color: var(--accent-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 36px;
 font-weight: 700;
 line-height: 1.16;
@@ -158,7 +135,6 @@ letter-spacing: 1.08px;
 
 .team-caption {
 color: var(--accent-text);
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.18;
@@ -167,7 +143,6 @@ letter-spacing: 0.48px;
 
 .team-desc {
 color: var(--sec-additional-text);
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.18;
@@ -200,7 +175,6 @@ letter-spacing: 0.78px;
 
 .address-link {
 color: var(--additional-text) ;
-font-family: "Roboto" sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.71;
@@ -209,7 +183,6 @@ letter-spacing: 0.42px;
 
 .footer-link {
 color: var(--footer-text);
-font-family: "Roboto" sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.71;
@@ -217,9 +190,19 @@ letter-spacing: 0.42px;
 }
 
 .address-link:focus,
-.footer-link:focus {
+.footer-link:focus,
+.footer-address-link:focus {
     background-color: var(--hero-background);
 }
+
+.footer-address-link{
+color: var(--footer-text);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71;
+letter-spacing: 0.42px;
+}
+
 
 /* Інша сторінка - portfolio hero */
 
@@ -227,7 +210,6 @@ letter-spacing: 0.42px;
 /* text */
 color: var(--accent-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
@@ -245,7 +227,6 @@ background: var(--second-background);
 /* text */
 color: var(--accent-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.62; 
@@ -263,7 +244,6 @@ background: var(--second-background);
 /* text */
 color: var(--accent-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
@@ -281,7 +261,6 @@ background: var(--second-background);
 /* text */
 color: var(--accent-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
@@ -299,7 +278,6 @@ background: var(--second-background);
 /* text */
 color: var(--accent-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
@@ -318,7 +296,6 @@ background: var(--second-background);
 /* text */
 color: var(--additional-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
@@ -338,7 +315,6 @@ box-shadow: 0px 3px 1px 0px var(--button-box-shadow)
 /* text */
 color: var(--additional-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
@@ -358,7 +334,6 @@ box-shadow: 0px 3px 1px 0px var(--button-box-shadow)
 /* text */
 color: var(--additional-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
@@ -378,7 +353,6 @@ box-shadow: 0px 3px 1px 0px var(--button-box-shadow)
 /* text */
 color: var(--additional-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
@@ -398,7 +372,6 @@ box-shadow: 0px 3px 1px 0px var(--button-box-shadow)
 /* text */
 color: var(--additional-text);
 text-align: center;
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
@@ -419,7 +392,6 @@ box-shadow: 0px 3px 1px 0px var(--button-box-shadow)
 
 .portfolio title {
 color: var(--accent-text);
-font-family: "Roboto" sans-serif;
 font-size: 18px;
 font-weight: 700;
 line-height: 2.00;
@@ -428,7 +400,6 @@ letter-spacing: 1.08px;
 
 .portfolio-desc {
 color: var(--sec-additional-text);
-font-family: "Roboto" sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.87;
