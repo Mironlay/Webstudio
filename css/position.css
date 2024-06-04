@@ -17,8 +17,15 @@ body {
 
 .header-box {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.header-logo {
+    margin-right: 93px;
+}
+
+.header-nav {
+    margin-right: auto;
 }
 
 .nav-box {
@@ -34,14 +41,15 @@ body {
 /* hero */
 
 .hero {
+    text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
-.hero-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero-title {
+    text-align: center;
+    width: 696px;
+    margin: 0 auto;
 }
 
 .hero-button {
@@ -124,6 +132,6 @@ body {
     margin-top: 20px;
 }
 
-.footer-address-link {
+.footer-item {
 margin-top: 9px;
 }
