@@ -79,10 +79,6 @@ letter-spacing: 0.96px;
 border-radius: 4px;
 background: var(--third-background);
 box-shadow: 0px 4px 4px 0px var(--button-box-shadow);
-/* button layout */
-width: 216px;
-height: 50px;
-flex-shrink: 0;
 }
 
 /* skills */
@@ -215,9 +211,6 @@ font-weight: 500;
 line-height: 1.62;
 letter-spacing: 0.48px;
 /* layout */
-width: 73px;
-height: 38px;
-flex-shrink: 0;
 /* style */
 border-radius: 4px;
 background: var(--second-background);
@@ -231,10 +224,6 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.62; 
 letter-spacing: 0.48px;
-/* layout */
-width: 125px;
-height: 38px;
-flex-shrink: 0;
 /* style */
 border-radius: 4px;
 background: var(--second-background);
@@ -248,10 +237,6 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
 letter-spacing: 0.48px;
-/* layout */
-width: 112px;
-height: 38px;
-flex-shrink: 0;
 /* style */
 border-radius: 4px;
 background: var(--second-background);
@@ -265,10 +250,6 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
 letter-spacing: 0.48px;
-/* layout */
-width: 103px;
-height: 38px;
-flex-shrink: 0;
 /* style */
 border-radius: 4px;
 background: var(--second-background);
@@ -282,10 +263,6 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
 letter-spacing: 0.48px;
-/* layout */
-width: 130px;
-height: 38px;
-flex-shrink: 0;
 /* style */
 border-radius: 4px;
 background: var(--second-background);
@@ -300,10 +277,6 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
 letter-spacing: 0.48px;
-/* layout */
-width: 73px;
-height: 38px;
-flex-shrink: 0;
 /* style */
 border-radius: 4px;
 background: var(--third-background);
@@ -319,10 +292,6 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
 letter-spacing: 0.48px;
-/* layout */
-width: 125px;
-height: 38px;
-flex-shrink: 0;
 /* style */
 border-radius: 4px;
 background: var(--third-background);
@@ -338,10 +307,6 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
 letter-spacing: 0.48px;
-/* layout */
-width: 112px;
-height: 38px;
-flex-shrink: 0;
 /* style */
 border-radius: 4px;
 background: var(--third-background);
@@ -357,10 +322,6 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
 letter-spacing: 0.48px;
-/* layout */
-width: 103px;
-height: 38px;
-flex-shrink: 0;
 /* style */
 border-radius: 4px;
 background: var(--third-background);
@@ -376,10 +337,6 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
 letter-spacing: 0.48px;
-/* layout */
-width: 130px;
-height: 38px;
-flex-shrink: 0;
 /* style */
 border-radius: 4px;
 background: var(--third-background);

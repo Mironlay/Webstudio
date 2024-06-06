@@ -53,6 +53,7 @@ body {
 }
 
 .hero-button {
+    padding: 10px 32px;
     margin-top: 30px;
 }
 
@@ -133,4 +134,26 @@ body {
 
 .footer-item {
 margin-top: 9px;
+}
+
+/* Інша сторінка - portfolio hero */
+
+.portfolio-button1 {
+    padding: 6px 25px;
+}
+
+.portfolio-button2 {
+    padding:  6px 22px;
+}
+
+.portfolio-button3 {
+    padding: 6px 22px;
+}
+
+.portfolio-button4 {
+    padding: 6px 22px;
+}
+
+.portfolio-button5 {
+    padding: 6px 22px;
 }
