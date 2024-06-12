@@ -138,6 +138,17 @@ margin-top: 9px;
 
 /* Інша сторінка - portfolio hero */
 
+.portfolio-hero {
+    padding: 94px 0;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
 .portfolio-button1 {
     padding: 6px 25px;
 }
@@ -157,3 +168,34 @@ margin-top: 9px;
 .portfolio-button5 {
     padding: 6px 22px;
 }
+
+.portfolio-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-item {
+    width: 370px;
+}
+
+.portfolio-image {
+    width: 370px;
+    height: 294px;
+}
+
+.portfolio-item-box {
+    padding: 20px 24px;
+}
+
+.portfolio-title {
+    width: 322px;
+    margin-bottom: 4px;
+}
+
+
+
+
+
+
+
