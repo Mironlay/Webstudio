@@ -118,6 +118,7 @@ letter-spacing: 1.08px;
 
 .team-item {
     background-color: var(--first-background);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
 .team-title {
@@ -351,6 +352,11 @@ box-shadow: 0px 3px 1px 0px var(--button-box-shadow)
 .portfolio-item {
     background-color: var(--first-background);
     border: 1px solid var(--portfolio-background);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio title {
