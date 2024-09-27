@@ -35,7 +35,11 @@ body {
 
 .contact-box {
     display: flex;
-    gap: 50px;
+    gap: 30px;
+}
+
+.header-item-img {
+    margin-right: 10px;
 }
 
 /* hero */
@@ -144,6 +148,30 @@ body {
 
 .team-desc {
     margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.team-social-list {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+}
+
+/* clients */
+
+.clients-title {
+    margin-bottom: 50px;
+}
+
+.clients-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients-list-item {
+    padding: 16px 32px;
+    
 }
 
 /* footer */
@@ -153,12 +181,29 @@ body {
     padding-bottom: 60px;
 }
 
+.footer-box {
+    display: flex;
+}
+
 .footer-address {
     margin-top: 20px;
 }
 
 .footer-item {
 margin-top: 9px;
+}
+
+.social-box {
+    margin-left: 70px;
+}
+
+.footer-title {
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    display: flex;
+    gap: 34px;
 }
 
 /* Інша сторінка - portfolio hero */
