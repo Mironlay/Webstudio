@@ -46,12 +46,11 @@ letter-spacing: 0.28px;
 height: 12px;
 }
 
- /* problem */
-/* .header-item-img:nth-child(2) {
+.header-item-img2 {
     fill: var(--svg-icon);
     width: 10px;
 height: 16px;
-} */
+}
 
 .header-link {
     color: var(--sec-additional-text);
@@ -61,13 +60,15 @@ height: 16px;
     letter-spacing: 0.28px;
 }
 
-/* .header-link:hover,
+.header-link:hover,
 .header-link:focus {
  color: var(--third-additional-text);
- .header-item-img {
+ .header-item-img,
+ .header-item-img2 {
     fill: var(--third-additional-text);
+    
  }
-} */
+}
 
 /* hero */
 
@@ -170,6 +171,10 @@ line-height: 1.18;
 letter-spacing: 0.48px;
 }
 
+.team-social-link {
+padding: 12px;
+border-radius: 100%;
+}
 
 .team-link-svg {
     width: 20px;
@@ -179,8 +184,9 @@ fill: var(--clients-svg);
 
 .team-social-link:focus,
 .team-social-link:hover {
+    background-color: var(--third-additional-text);
     .team-link-svg{
-        fill: var(--third-additional-text);
+        fill: var(--additional-text);
     }
 }
 
@@ -200,25 +206,26 @@ line-height: 1.6;
 letter-spacing: 1.08px;
 }
 
-.clients-list-item {
-    border-radius: 4px;
+.clients-item-link {
+width: 170px;
+height: 92px;
 border: 1px solid #AFB1B8;
+border-radius: 4px;
 }
 
 .clients-link-img {
     fill: var(--clients-svg);
     width: 106px;
-height: 60px;
+    height: 60px;
 }
 
-.clients-list-item:hover,
-.clients-list-item:focus {
-    border: 1px solid var(--third-additional-text);
+.clients-item-link:hover,
+.clients-item-link:focus {
+    border: 1px solid var(--third-additional-text) ;
     .clients-link-img{
         fill: var(--third-additional-text);
     }
 }
-
 
 /* footer */
 
@@ -287,16 +294,21 @@ letter-spacing: 0.42px;
 text-transform: uppercase;
 }
 
-
-/* .social-circle {
-    width: 44px;
-height: 44px;
-} */
+.footer-social-link {
+    padding: 12px;
+    border-radius: 100%;
+    background-color: var(--footer-svg);
+}
 
 .footer-social-img {
 fill: var(--additional-text);
 width: 20px;
 height: 20px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--third-background);
 }
 
 /* Інша сторінка - portfolio hero */
