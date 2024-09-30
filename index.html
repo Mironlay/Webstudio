@@ -406,8 +406,8 @@
         <div class="form-box">
           <h2 class="form-title">Підпишіться на розсилку</h2>
           <form class="search">
-            <input type="text" class="search-input" placeholder="E-mail">
-            <button class="search-button" type="button">
+            <input type="email" class="search-input" placeholder="E-mail" required>
+            <button class="search-button" type="submit">
               Підписатися <svg class="search-svg">
                 <use href="./images/symbol-defs.svg#send"></use>
               </svg>
@@ -418,6 +418,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="modal-form">
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <label for="name" class="modal-label">Ім'я</label>
         <div class="modal-wrap">
@@ -453,6 +454,7 @@
         <use href="./images/symbol-defs.svg#modal_close"></use>
         </svg>
         </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
