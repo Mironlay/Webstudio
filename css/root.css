@@ -3,15 +3,24 @@
     --first-background: rgba(255, 255, 255, 1);
     --second-background: rgba(245, 244, 250, 1);
     --third-background: rgba(33, 150, 243, 1);
+    --footer-background: rgba(47, 48, 58, 1);
     --portfolio-background: rgba(238, 238, 238, 1);
+    --backdrop-background:  rgba(0, 0, 0, 0.20);
     --work-box-background: rgba(47, 48, 58, 0.8);
     --button-box-shadow: rgba(0, 0, 0, 0.15);
+    --input-shadow: rgba(0, 0, 0, 0.15);
+    --input-border: rgba(255, 255, 255, 0.30);
+    --second-border:rgba(33, 33, 33, 0.20);
+    --close-border: rgba(0, 0, 0, 0.10);
+    --button-hover: rgba(24, 140, 232, 1);
     --accent-text: rgba(33,33,33,1);
     --additional-text: rgba(255, 255, 255, 1);
     --sec-additional-text: rgba(117, 117, 117, 1);
     --third-additional-text: rgba(33, 150, 243, 1);
     --footer-text: rgba(255, 255, 255, 0.6);
+    --footer-input: rgba(255, 255, 255, 0.60);
     --svg-icon: rgba(117, 117, 117, 1);
     --clients-svg: rgba(175, 177, 184, 1);
     --footer-svg: rgba(255, 255, 255, 0.1);
+    --close-svg: rgba(0, 0, 0, 1);
 }
