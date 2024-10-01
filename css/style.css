@@ -534,6 +534,7 @@ box-shadow: 0px 3px 1px 0px var(--button-box-shadow)
 .portfolio-item {
     background-color: var(--first-background);
     border: 1px solid var(--portfolio-background);
+    position: relative;
 }
 
 .portfolio-item:hover,
@@ -555,4 +556,19 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.87;
 letter-spacing: 0.48px;
+}
+
+.hover-box {
+    width: 370px;
+height: 294px;
+background: var(--third-background);
+}
+
+.hover-title {
+    color: var(--additional-text);
+font-family: "Roboto", sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 1.55;
+letter-spacing: 0.54px;
 }
