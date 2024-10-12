@@ -37,18 +37,6 @@ body {
     position: relative;
 }
 
-.active::after {
-    content: "";
-    width: 100%;
-height: 4px;
-border-radius: 2px;
-background: var(--third-background);
-display: block;
-position: absolute;
-margin-top: 31px;
-opacity: 1;
-}
-
 .contact-box {
     display: flex;
     gap: 30px;
@@ -333,9 +321,13 @@ letter-spacing: 0.12px;
     width: 448px;
 height: 40px;
 border-radius: 4px;
-border: 1px solid var(--second-border);
+border: none;
+outline: 1px solid  var(--second-border);
 margin-bottom: 10px;
 padding-left: 42px;
+transition-property: outline;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus,
@@ -357,18 +349,26 @@ fill: var(--accent-color);
 position: absolute;
 left: 12px;
 top: 11px;
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .modal-text {
     border-radius: 4px;
-border: 1px solid var(--second-border);
+outline: 1px solid var(--second-border);
 margin-bottom: 20px;
 width: 448px;
 height: 120px;
 padding: 12px;
 resize: none;
 margin-bottom: 20px;
+transition-property: outline;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .modal-text:hover,
 .modal-text:focus {
@@ -417,15 +417,18 @@ line-height: 1.87;
 letter-spacing: 0.96px;
 border-radius: 4px;
 background: var(--third-background);
-box-shadow: 0px 4px 4px 0px var(--button-box-shadow);
 border: none;
 margin-left: 124px;
 margin-right: 124px;
+transition-property: background-color, box-shadow;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submit-button:focus,
 .modal-submit-button:hover {
     background-color: var(--button-hover);
+    box-shadow: 0px 4px 4px 0px var(--button-box-shadow);
 }
 
 .modal-close-button {
@@ -452,6 +455,9 @@ top: 8px;
     width: 18px;
 height: 18px;
 fill: var(--close-svg);
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -468,24 +474,8 @@ fill: var(--close-svg);
     margin-bottom: 50px;
 }
 
-.portfolio-button1 {
+.portfolio-button {
     padding: 6px 25px;
-}
-
-.portfolio-button2 {
-    padding:  6px 22px;
-}
-
-.portfolio-button3 {
-    padding: 6px 22px;
-}
-
-.portfolio-button4 {
-    padding: 6px 22px;
-}
-
-.portfolio-button5 {
-    padding: 6px 22px;
 }
 
 .portfolio-box {
@@ -522,6 +512,9 @@ position: absolute;
 top: 0;
 padding: 63px 24px;
 opacity: 0;
+transition-property: opacity;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
