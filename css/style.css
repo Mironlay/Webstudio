@@ -338,6 +338,10 @@ line-height: 1.38;
 letter-spacing: 0.78px;
 }
 
+.footer-address {
+    width: 231px;
+}
+
 .address-link {
 color: var(--additional-text) ;
 font-style: normal;
@@ -412,7 +416,7 @@ text-transform: uppercase;
 }
 
 .search-input {
-    width: 358px;
+    width: 363px;
 height: 50px;
 background-color: var(--footer-background);
 border-radius: 4px;
@@ -518,14 +522,11 @@ line-height: 1.87;
 letter-spacing: 0.48px;
 }
 
-.hover-box {
+.hover-title {
     width: 370px;
 height: 294px;
 background: var(--third-background);
-}
-
-.hover-title {
-    color: var(--additional-text);
+color: var(--additional-text);
 font-family: "Roboto", sans-serif;
 font-size: 18px;
 font-weight: 400;
