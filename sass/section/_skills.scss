@@ -1,0 +1,52 @@
+.skills {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.skills-item::before {
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--second-background);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-image: url(../images/antenna.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skills-item:nth-child(2)::before {
+    background-image: url(../images/clock.png);
+}
+
+.skills-item:nth-child(3)::before {
+    background-image: url(../images/diagram.png);
+}
+
+.skills-item:nth-child(4)::before {
+    background-image: url(../images/astronaut.png);
+}
+
+.skills-list-box {
+    display: flex;
+    gap: 30px;
+}
+
+.skills-title {
+    color: var(--accent-text);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    }
+    
+.skills-desc {
+    color: var(--sec-additional-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71; 
+    letter-spacing: 0.42px;
+    margin-top: 10px;
+}
