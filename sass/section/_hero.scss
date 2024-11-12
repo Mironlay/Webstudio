@@ -1,5 +1,5 @@
 .hero {
-    background-color: var(--hero-background);
+    background-color: $hero-background;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -7,53 +7,52 @@
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-}
 
-.hero-title {
-    color: var(--additional-text);
-text-align: center;
-font-size: 44px;
-font-weight: 900;
-line-height: 1.36;
-letter-spacing: 2.64px;
-text-transform: uppercase;
-text-align: center;
-    width: 696px;
-    margin: 0 auto;
-}
-
-.hero-button {
-color: var(--additional-text);
-text-align: center;
-font-size: 16px;
-font-weight: 700;
-line-height: 1.87;
-letter-spacing: 0.96px;
-border-radius: 4px;
-border: none;
-background-color: var(--third-background);
-box-shadow: 0px 4px 4px 0px var(--button-box-shadow);
-transition-property: background-color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-animation-name: hero-button;
-animation-duration: 1s;
-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-animation-iteration-count: 6;
-animation-direction: alternate;
-padding: 10px 32px;
-margin-top: 30px;
-}
-
-@keyframes hero-button {
-    0% {
-        transform: scale(1);
+    &__title {
+        color: $additional-text;
+        text-align: center;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 1.36;
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 696px;
+        margin: 0 auto;
     }
-    100% {
-        transform: scale(1.2);
-    }
-}
 
-.hero-button:hover {
-    background-color: var(--button-hover);
+    &__button {
+        color: $additional-text;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87;
+        letter-spacing: 0.96px;
+        border-radius: 4px;
+        border: none;
+        background-color: $third-background;
+        box-shadow: 0px 4px 4px 0px $button-box-shadow;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        animation-name: hero-button;
+        animation-duration: 1s;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        animation-iteration-count: 6;
+        animation-direction: alternate;
+        padding: 10px 32px;
+        margin-top: 30px;
+        @keyframes hero-button {
+            0% {
+                 transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+        }
+
+    &__button:hover {
+        background-color: $button-hover;
+    }
 }

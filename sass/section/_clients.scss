@@ -1,50 +1,51 @@
 .clients {
     padding: 94px 0 94px 0;
-}
 
-.clients-title {
-    color: var(--accent-text);
-text-align: center;
-font-family: "Roboto", sans-serif;
-font-size: 36px;
-font-weight: 700;
-line-height: 1.6;
-letter-spacing: 1.08px;
-margin-bottom: 50px;
-}
+    &__title {
+        color: $accent-text;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+    }
 
-.clients-box {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
+    &__box {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
 
-.clients-item-link {
-width: 170px;
-height: 92px;
-border: 1px solid #AFB1B8;
-border-radius: 4px;
-transition-property: border;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-display: flex;
-justify-content: center;
-align-items: center;
-}
+    &__item-link {
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.clients-link-img {
-    fill: var(--clients-svg);
-    width: 106px;
-    height: 60px;
-    transition-property: fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__link-img {
+        fill: $clients-svg;
+        width: 106px;
+        height: 60px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.clients-item-link:hover,
-.clients-item-link:focus {
-    border: 1px solid var(--third-additional-text) ;
-    .clients-link-img{
-        fill: var(--third-additional-text);
+    &__item-link:hover,
+    &__item-link:focus {
+    border: 1px solid $third-additional-text;
+    .clients__link-img {
+        fill: $third-additional-text;
+    }
     }
 }
+
