@@ -31,7 +31,7 @@
     &__item::before {
         display: block;
         content: "";
-        width: 450px;
+        max-width: 450px;
         height: 120px;
         background-color: $second-background;
         border-radius: 4px;
@@ -82,7 +82,7 @@
         line-height: 1.71; 
         letter-spacing: 0.42px;
         margin-top: 10px;
-        width: 450px;
+        max-width: 450px;
 
         @media screen and (min-width: 768px) {
             width: 354px;
