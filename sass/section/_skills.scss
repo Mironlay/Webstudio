@@ -1,16 +1,37 @@
 .skills {
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
     padding-bottom: 94px;
+    }
 
     &__list-box {
         display: flex;
+        flex-direction: column;
         gap: 30px;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
     }
 
     &__item::before {
         display: block;
         content: "";
-        width: 270px;
+        width: 450px;
         height: 120px;
         background-color: $second-background;
         border-radius: 4px;
@@ -18,6 +39,14 @@
         background-image: url(../images/antenna.png);
         background-repeat: no-repeat;
         background-position: center;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
     }
     
     &__item:nth-child(2)::before {
@@ -34,11 +63,16 @@
 
     &__title {
         color: $accent-text;
+        text-align: center;
         font-size: 14px;
         font-weight: 700;
         line-height: 1.14;
         letter-spacing: 0.42px;
         text-transform: uppercase;
+
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
     }
 
     &__desc {
@@ -48,5 +82,15 @@
         line-height: 1.71; 
         letter-spacing: 0.42px;
         margin-top: 10px;
+        width: 450px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+        
+    
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
     }
 }

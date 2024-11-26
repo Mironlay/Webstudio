@@ -1,7 +1,42 @@
 .team {
     background-color: $second-background;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0 60px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0 94px 0;
+    }
+
+    &__title {
+        color: $accent-text;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.84px;
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: 1.16;
+            letter-spacing: 1.08px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 30px;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 50px;
+        }
+    }
 
     &__item {
         background-color: $first-background;
@@ -11,30 +46,30 @@
     }  
 
     &__image {
-        width: 270px;
-        height: 260px;
+
+        width: 450px;
+        height: 460px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 374px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            height: 260px;
+        }
     }
 
     &__text-box {
         padding-top: 30px;
-        padding-bottom: 30px;
-    }
+        padding-bottom: 24px;
 
-    &__title {
-        color: $accent-text;
-        text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.16;
-        letter-spacing: 1.08px;
-        text-align: center;
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 30px;
+        }
     }
-
-    &__box {
-        display: flex;
-        margin-top: 50px;
-        gap: 30px;
-    }
+    
 
     &__caption {
         color: $accent-text;

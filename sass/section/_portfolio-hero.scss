@@ -1,11 +1,26 @@
 .portfolio {
-    padding: 94px 0;
+    padding: 60px 0;
+    
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
 
     &__button-box {
         display: flex;
-        justify-content: center;
-        gap: 8px;
-        margin-bottom: 50px;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        column-gap: 8px;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 768px)  {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
+
     }
 
     &__button {
@@ -33,8 +48,13 @@
 
     &__box {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 30px;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
@@ -44,8 +64,15 @@
         transition-property: box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        flex-basis: calc((100% - 60px) / 3);
         overflow: hidden;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
     }
 
     &__item:hover,
@@ -71,6 +98,15 @@
 
     &__image {
         width: 100%;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 100%;;
+        }
+        
     }
 
     &__title {
@@ -92,8 +128,8 @@
     }
 
     &__hover-title {
-        width: 370px;
-        height: 294px;
+        width: 100%;
+        height: 100%;
         background: $third-background;
         color: $additional-text;
         font-family: "Roboto", sans-serif;
@@ -103,11 +139,20 @@
         letter-spacing: 0.54px;
         position: absolute;
         top: 0;
-        padding: 63px 24px;
+        padding: 77px 24px;
         opacity: 0;
         transition-property: opacity, transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transform: translateY(400px);
+
+        @media screen and (min-width: 768px) {
+            padding: 49px 24px 77px 24px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 63px 24px;
+        }
+
     }
 }

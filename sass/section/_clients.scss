@@ -1,26 +1,44 @@
 .clients {
-    padding: 94px 0 94px 0;
+    padding: 60px 0 60px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0 94px 0;
+    }
 
     &__title {
         color: $accent-text;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
-    line-height: 1.6;
-    letter-spacing: 1.08px;
+    line-height: 1.17;
+    letter-spacing: 0.84px;
     margin-bottom: 50px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 1.08px;
+    }
     }
 
     &__box {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+
+        @media screen and (min-width: 768px) {
+
+        }
+
+        @media screen and (min-width: 1200px) {
+
+        }
     }
 
     &__item-link {
-        width: 170px;
-        height: 92px;
+        padding: 16px 51px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
         transition-property: border;
@@ -29,6 +47,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (min-width: 768px) {
+            padding: 16px 59px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 16px 31px;
+        }
     }
 
     &__link-img {
