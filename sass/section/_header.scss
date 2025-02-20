@@ -14,12 +14,11 @@
     }
 
     &__box {
-        display: flex;
-    align-items: center;
+    @include flex-box($justify:start, $wrap:nowrap);
     }
 
     &__logo {
-        margin-right: 276px;
+        margin-right: auto;
 
         @media screen and (min-width: 768px) {
             margin-right: 88px;
@@ -213,3 +212,187 @@
     }
 
 }
+
+// /\/\/\/\/\/\/\/\/\/\/\ Мобільне меню /\/\/\/\/\/\/\/\/\/\/\
+
+.header {
+
+    &__button {
+        background: none;
+        border: none;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+    }
+
+    &__menu-svg {
+        width: 40px;
+        height: 40px;
+        fill: $close-svg;
+    }
+
+
+
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+    padding: 48px 40px;
+    opacity: 1;
+    background-color: $first-background;
+
+    &__close-btn {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+
+    &__close-svg {
+        fill: $close-svg;
+        width: 40px;
+        height: 40px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__close-btn:hover,
+    &__close-btn:focus {
+        .menu__close-svg {
+            fill: $third-additional-text;
+        }
+    }
+
+    
+
+    &__link-list {
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+        margin-bottom: auto;
+    }
+
+    &__link-list-item {
+
+    }
+
+    &__link {
+        color: $accent-text;
+        font-family: "Roboto", sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1.75;
+        letter-spacing: 0.8px;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $third-additional-text;
+    }
+
+    &__absolute {
+        position: absolute;
+        bottom: 50px;
+    }
+
+    &__contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+
+
+    &__contact-link {
+        color: $third-additional-text;
+        font-family: "Roboto", sans-serif;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 0.85;
+        letter-spacing: 0.68px;
+    }
+
+    &__email-link {
+        color: $sec-additional-text;
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.48px;
+    }
+
+    &__social-list {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__social-link {
+        color: $third-additional-text;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.22;
+        letter-spacing: 0.36px;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__social-link:hover {
+        color: $accent-text;
+    }
+
+    &__social-link::after {
+        display: inline-block;
+        content: "";
+        width: 1px;
+        height: 22px;
+        background-color: rgba(33, 33, 33, 0.20);
+        margin: 0 10px;
+    }
+
+    &__social-link:last-child::after {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+
+

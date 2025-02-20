@@ -23,6 +23,11 @@
     <header class="header">
       <div class="container header__box">
         <a href="./index.html" class="header__logo"><span class="header__logo-color">Web</span><span class="header__logo-color2">Studio</span></a>
+        <button class="header__button" type="button" data-modal-header-open>
+          <svg class="header__menu-svg">
+            <use href="./images/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
           <ul class="header__nav-list header__nav-box">
             <li class="header__nav-item">
               <a href="./index.html" class="header__nav-link active">Студія</a>
@@ -48,6 +53,32 @@
             +38 096 111 11 11</a>
           </li>
         </ul>
+        <div class="menu is-hidden" data-header-modal>
+          <button type="button" class="menu__close-btn" data-modal-header-close>
+            <svg class="menu__close-svg">
+              <use href="./images/symbol-defs.svg#modal_close"></use>
+            </svg>
+          </button>
+          <ul class="menu__link-list">
+            <li class="menu__link-list-item"><a href="./index.html" class="menu__link">Студія</a></li>
+            <li class="menu__link-list-item"><a href="./pages/portfolio.html" class="menu__link">Портфоліо</a></li>
+            <li class="menu__link-list-item"><a href="#" class="menu__link">Контакти</a></li>
+          </ul>
+          <div class="menu__absolute">
+          <ul class="menu__contact-list">
+            <li class="menu__contact-list-item"><a href="tel:+380961111111" class="menu__contact-link">+38 096 111 11 11</a></li>
+            <li class="menu__contact-list-item"><a href="mailto:info@devstudio.com" class="menu__email-link">info@devstudio.com</a></li>
+          </ul>
+          <ul class="menu__social-list">
+            <li class="menu__social-list-item">
+            <a href="#" class="menu__social-link">Instagram</a>
+            <a href="#" class="menu__social-link">Twitter</a>
+            <a href="#" class="menu__social-link">Facebook</a>
+            <a href="#" class="menu__social-link">LinkedIn</a>
+            </li>
+          </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -440,7 +471,9 @@
         <span class="modal__checkbox-text">Погоджуюся з розсилкою та приймаю</span>
         <a href="#" class="modal__checkbox-link">Умови договору</a>
         </label>
+        <div class="modal__btn-box">
         <button class="modal__submit-button" type="submit">Відправити</button>
+        </div>
         <button type="button" class="modal__close-button" data-modal-close>
         <svg class="close-button-svg">
         <use href="./images/symbol-defs.svg#modal_close"></use>
@@ -450,5 +483,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>

@@ -23,9 +23,7 @@
     }
 
     &__box {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        @include flex-box();
         gap: 30px;
     }
 
@@ -50,9 +48,8 @@
         transition-property: border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-box ($wrap:nowrap);
+
         @media screen and (min-width: 768px) {
 
         }
