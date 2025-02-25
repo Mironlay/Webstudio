@@ -23,6 +23,11 @@
     <header class="header">
       <div class="container header__box">
         <a href="../index.html" class="header__logo"><span class="header__logo-color">Web</span><span class="header__logo-color2">Studio</span></a>
+        <button class="header__button" type="button" data-modal-header-open>
+          <svg class="header__menu-svg">
+            <use href="../images/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
           <ul class="header__nav-list header__nav-box">
             <li class="header__nav-item">
               <a href="../index.html" class="header__nav-link">Студія</a>
@@ -48,6 +53,32 @@
             +38 096 111 11 11</a>
           </li>
         </ul>
+        <div class="menu is-hidden" data-header-modal>
+          <button type="button" class="menu__close-btn" data-modal-header-close>
+            <svg class="menu__close-svg">
+              <use href="../images/symbol-defs.svg#modal_close"></use>
+            </svg>
+          </button>
+          <ul class="menu__link-list">
+            <li class="menu__link-list-item"><a href="../index.html" class="menu__link">Студія</a></li>
+            <li class="menu__link-list-item"><a href="../pages/portfolio.html" class="menu__link">Портфоліо</a></li>
+            <li class="menu__link-list-item"><a href="#" class="menu__link">Контакти</a></li>
+          </ul>
+          <div class="menu__absolute">
+          <ul class="menu__contact-list">
+            <li class="menu__contact-list-item"><a href="tel:+380961111111" class="menu__contact-link">+38 096 111 11 11</a></li>
+            <li class="menu__contact-list-item"><a href="mailto:info@devstudio.com" class="menu__email-link">info@devstudio.com</a></li>
+          </ul>
+          <ul class="menu__social-list">
+            <li class="menu__social-list-item">
+            <a href="#" class="menu__social-link">Instagram</a>
+            <a href="#" class="menu__social-link">Twitter</a>
+            <a href="#" class="menu__social-link">Facebook</a>
+            <a href="#" class="menu__social-link">LinkedIn</a>
+            </li>
+          </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -64,7 +95,12 @@
           <ul class="portfolio__list portfolio__box">
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
-                <img src="../images/laptop.jpg" alt="laptop" class="portfolio__image"/>
+                <picture>
+                  <source srcset="../images/phone/portfolio-laptop-phone@1x.webp 1x, ../images/phone/portfolio-laptop-phone@2x.webp 2x" media="(max-width: 767px)">
+                  <source srcset="../images/tablet/portfolio-laptop-tablet@1x.webp 1x, ../images/tablet/portfolio-laptop-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="../images/desktop/portfolio-laptop-desktop@1x.webp 1x, ../images/desktop/portfolio-laptop-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                  <img src="../images/phone/portfolio-laptop-phone@1x.webp" alt="laptop" class="portfolio__image">
+                </picture>
                 <h3 class="portfolio__hover-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</h3>
               </div>
               <div class="portfolio__item-box">
@@ -74,7 +110,12 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
-                <img src="../images/basketball.jpg" alt="laptop" class="portfolio__image"/>
+                <picture>
+                  <source srcset="../images/phone/portfolio-basketball-phone@1x.webp 1x, ../images/phone/portfolio-basketball-phone@2x.webp 2x" media="(max-width: 767px)">
+                  <source srcset="../images/tablet/portfolio-basketball-tablet@1x.webp 1x, ../images/tablet/portfolio-basketball-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="../images/desktop/portfolio-basketball-desktop@1x.webp 1x, ../images/desktop/portfolio-basketball-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                  <img src="../images/phone/portfolio-basketball-phone@1x.webp" alt="basketball" class="portfolio__image">
+                </picture>
                 <h3 class="portfolio__hover-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</h3>
               </div>
               <div class="portfolio__item-box">
@@ -84,7 +125,12 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
-                <img src="../images/restaurant.jpg" alt="laptop" class="portfolio__image"/>
+                <picture>
+                  <source srcset="../images/phone/portfolio-restaurant-phone@1x.webp 1x, ../images/phone/portfolio-restaurant-phone@2x.webp 2x" media="(max-width: 767px)">
+                  <source srcset="../images/tablet/portfolio-restaurant-tablet@1x.webp 1x, ../images/tablet/portfolio-restaurant-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="../images/desktop/portfolio-restaurant-desktop@1x.webp 1x, ../images/desktop/portfolio-restaurant-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                  <img src="../images/phone/portfolio-restaurant-phone@1x.webp" alt="restaurant" class="portfolio__image">
+                </picture>
                 <h3 class="portfolio__hover-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</h3>
               </div>
               <div class="portfolio__item-box">
@@ -94,7 +140,12 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
-                <img src="../images/headphones.jpg" alt="laptop" class="portfolio__image"/>
+                <picture>
+                  <source srcset="../images/phone/portfolio-headphones-phone@1x.webp 1x, ../images/phone/portfolio-headphones-phone@2x.webp 2x" media="(max-width: 767px)">
+                  <source srcset="../images/tablet/portfolio-headphones-tablet@1x.webp 1x, ../images/tablet/portfolio-headphones-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="../images/desktop/portfolio-headphones-desktop@1x.webp 1x, ../images/desktop/portfolio-headphones-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                  <img src="../images/phone/portfolio-headphones-phone@1x.webp" alt="headphones" class="portfolio__image">
+                </picture>
                 <h3 class="portfolio__hover-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</h3>
               </div>
               <div class="portfolio__item-box">
@@ -104,7 +155,12 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
-                <img src="../images/boxes.jpg" alt="laptop" class="portfolio__image"/>
+                <picture>
+                  <source srcset="../images/phone/portfolio-boxes-phone@1x.webp 1x, ../images/phone/portfolio-boxes-phone@2x.webp 2x" media="(max-width: 767px)">
+                  <source srcset="../images/tablet/portfolio-boxes-tablet@1x.webp 1x, ../images/tablet/portfolio-boxes-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="../images/desktop/portfolio-boxes-desktop@1x.webp 1x, ../images/desktop/portfolio-boxes-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                  <img src="../images/phone/portfolio-boxes-phone@1x.webp" alt="boxes" class="portfolio__image">
+                </picture>
                 <h3 class="portfolio__hover-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</h3>
               </div>
               <div class="portfolio__item-box">
@@ -114,7 +170,12 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
-                <img src="../images/monitor.jpg" alt="laptop" class="portfolio__image"/>
+                <picture>
+                  <source srcset="../images/phone/portfolio-monitor-phone@1x.webp 1x, ../images/phone/portfolio-monitor-phone@2x.webp 2x" media="(max-width: 767px)">
+                  <source srcset="../images/tablet/portfolio-monitor-tablet@1x.webp 1x, ../images/tablet/portfolio-monitor-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="../images/desktop/portfolio-monitor-desktop@1x.webp 1x, ../images/desktop/portfolio-monitor-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                  <img src="../images/phone/portfolio-monitor-phone@1x.webp" alt="monitor" class="portfolio__image">
+                </picture>
                 <h3 class="portfolio__hover-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</h3>
               </div>
               <div class="portfolio__item-box">
@@ -124,7 +185,12 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
-                <img src="../images/book.jpg" alt="laptop" class="portfolio__image"/>
+                <picture>
+                  <source srcset="../images/phone/portfolio-book-phone@1x.webp 1x, ../images/phone/portfolio-book-phone@2x.webp 2x" media="(max-width: 767px)">
+                  <source srcset="../images/tablet/portfolio-book-tablet@1x.webp 1x, ../images/tablet/portfolio-book-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="../images/desktop/portfolio-book-desktop@1x.webp 1x, ../images/desktop/portfolio-book-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                  <img src="../images/phone/portfolio-book-phone@1x.webp" alt="book" class="portfolio__image">
+                </picture>
                 <h3 class="portfolio__hover-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</h3>
               </div>
               <div class="portfolio__item-box">
@@ -134,7 +200,12 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
-                <img src="../images/label.jpg" alt="laptop" class="portfolio__image"/>
+                <picture>
+                  <source srcset="../images/phone/portfolio-label-phone@1x.webp 1x, ../images/phone/portfolio-label-phone@2x.webp 2x" media="(max-width: 767px)">
+                  <source srcset="../images/tablet/portfolio-label-tablet@1x.webp 1x, ../images/tablet/portfolio-label-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="../images/desktop/portfolio-label-desktop@1x.webp 1x, ../images/desktop/portfolio-label-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                  <img src="../images/phone/portfolio-label-phone@1x.webp" alt="label" class="portfolio__image">
+                </picture>
                 <h3 class="portfolio__hover-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</h3>
               </div>
               <div class="portfolio__item-box">
@@ -144,7 +215,12 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
-                <img src="../images/business.jpg" alt="laptop" class="portfolio__image"/>
+                <picture>
+                  <source srcset="../images/phone/portfolio-business-phone@1x.webp 1x, ../images/phone/portfolio-business-phone@2x.webp 2x" media="(max-width: 767px)">
+                  <source srcset="../images/tablet/portfolio-business-tablet@1x.webp 1x, ../images/tablet/portfolio-business-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="../images/desktop/portfolio-business-desktop@1x.webp 1x, ../images/desktop/portfolio-business-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                  <img src="../images/phone/portfolio-business-phone@1x.webp" alt="business" class="portfolio__image">
+                </picture>
                 <h3 class="portfolio__hover-title">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</h3>
               </div>
               <div class="portfolio__item-box">
@@ -223,6 +299,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script src="../js/modal-menu.js"></script>
   </body>
 </html>

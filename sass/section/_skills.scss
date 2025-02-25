@@ -36,29 +36,144 @@
         background-color: $second-background;
         border-radius: 4px;
         margin-bottom: 30px;
-        background-image: url(../images/antenna.png);
+        background-image: url(../images/phone/skills-antenna-phone@1x.webp);
         background-repeat: no-repeat;
         background-position: center;
 
+       @media (min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+        &__item::before {
+        background-image: url(../images/phone/skills-antenna-phone@2x.webp);
+        }
+        }   
+
         @media screen and (min-width: 768px) {
             width: 354px;
+            background-image: url(../images/tablet/skills-antenna-tablet@1x.webp);
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__item::before {
+            background-image: url(../images/tablet/skills-antenna-tablet@2x.webp);
+                }
+            }
         }
     
         @media screen and (min-width: 1200px) {
             width: 270px;
+            background-image: url(../images/desktop/skills-antenna-desktop@1x.webp);
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__item::before {
+            background-image: url(../images/desktop/skills-antenna-desktop@2x.webp);
+                }
+            } 
         }
     }
     
     &__item:nth-child(2)::before {
-        background-image: url(../images/clock.png);
+        background-image: url(../images/phone/skills-clock-phone@1x.webp);
+
+        @media (min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+        &__item::before {
+        background-image: url(../images/phone/skills-clock-phone@2x.webp);
+        }
+        }   
+
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/tablet/skills-clock-tablet@1x.webp);
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__item::before {
+            background-image: url(../images/tablet/skills-clock-tablet@2x.webp);
+                }
+            }
+        }
+    
+        @media screen and (min-width: 1200px) {
+            background-image: url(../images/desktop/skills-clock-desktop@1x.webp);
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__item::before {
+            background-image: url(../images/desktop/skills-clock-desktop@2x.webp);
+                }
+            } 
+        }
+        
     }
     
     &__item:nth-child(3)::before {
-        background-image: url(../images/diagram.png);
+        background-image: url(../images/phone/skills-diagram-phone@1x.webp);
+
+        @media (min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+        &__item::before {
+        background-image: url(../images/phone/skills-diagram-phone@2x.webp);
+        }
+        }   
+
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/tablet/skills-diagram-tablet@1x.webp);
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__item::before {
+            background-image: url(../images/tablet/skills-diagram-tablet@2x.webp);
+                }
+            }
+        }
+    
+        @media screen and (min-width: 1200px) {
+            background-image: url(../images/desktop/skills-diagram-desktop@1x.webp);
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__item::before {
+            background-image: url(../images/desktop/skills-diagram-desktop@2x.webp);
+                }
+            } 
+        }
     }
     
     &__item:nth-child(4)::before {
-        background-image: url(../images/astronaut.png);
+        background-image: url(../images/phone/skills-astonaut-phone@1x.webp);
+
+        @media (min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+        &__item::before {
+        background-image: url(../images/phone/skills-astonaut-phone@2x.webp);
+        }
+        }   
+
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/tablet/skills-astonaut-tablet@1x.webp);
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__item::before {
+            background-image: url(../images/tablet/skills-astonaut-tablet@2x.webp);
+                }
+            }
+        }
+    
+        @media screen and (min-width: 1200px) {
+            background-image: url(../images/desktop/skills-astonaut-desktop@1x.webp);
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__item::before {
+            background-image: url(../images/desktop/skills-astonaut-desktop@2x.webp);
+                }
+            } 
+        }
     }
 
     &__title {

@@ -282,10 +282,6 @@
         margin-bottom: auto;
     }
 
-    &__link-list-item {
-
-    }
-
     &__link {
         color: $accent-text;
         font-family: "Roboto", sans-serif;
@@ -368,22 +364,6 @@
     &__social-link:last-child::after {
         display: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
